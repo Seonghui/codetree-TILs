@@ -1,18 +1,12 @@
-let a = 5
-let b = 6
-let c = 7
+// 변수 선언
+let a = 5;
+let b = 6;
+let c = 7;
 
-let temp1
-let temp2
+// 값 교체
+[a, b, c] = [c, a, b];
 
-temp1 = b
-b = a
-
-temp2 = c
-c = temp1
-
-a = temp2
-
-console.log(a)
-console.log(b)
-console.log(c)
+// 출력
+console.log(a);
+console.log(b);
+console.log(c);
