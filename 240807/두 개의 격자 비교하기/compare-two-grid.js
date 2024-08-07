@@ -7,9 +7,9 @@ let arr2d = Array(n).fill(0).map(() => Array(m).fill(0));
 const arr1 = []
 const arr2 = []
 
-for (let i = 1; i < 5; i++) {
+for (let i = 1; i < n + 1; i++) {
     arr1.push(input[i].split(' '))
-    arr2.push(input[i + 4].split(' '))
+    arr2.push(input[i + n].split(' '))
 }
 
 for (let i = 0; i < n; i++) {
