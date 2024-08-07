@@ -23,7 +23,10 @@ for (let i = 0; i < row; i++) {
 }
 
 for (let i = 0; i < col; i++) {
-    const sum = arr2d[0][i] + arr2d[1][i]
+    let sum = 0
+    for (let j = 0; j < row; j++) {
+        sum += arr2d[j][i]
+    }
     answer2.push((sum / row).toFixed(1))
 }
 
