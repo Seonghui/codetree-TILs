@@ -13,7 +13,7 @@ for (let i = 0; i < m; i++) {
             num++
         }    
     } else {
-        for (let j = m + 1; j >= 0; j--) {
+        for (let j = n - 1; j >= 0; j--) {
             arr2d[j][i] = num;
             num++
         }
