@@ -1,5 +1,6 @@
 const fs = require("fs");
-let items = fs.readFileSync(0).toString().split("\n");
+let items = fs.readFileSync(0).toString().split("\n").filter(item => item.trim().length > 0);
+
 let max = items[0]
 let min = items[0]
 
