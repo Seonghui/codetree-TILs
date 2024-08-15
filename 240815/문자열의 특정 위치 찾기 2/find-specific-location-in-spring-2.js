@@ -5,7 +5,7 @@ const arr = ["apple", "banana", "grape", "blueberry", "orange"]
 const answer = []
 
 for (let item of arr) {
-    if (item[1] === char || item[2]=== char){
+    if (item[2] === char || item[3]=== char){
         answer.push(item)
     }
 }
