@@ -1,5 +1,5 @@
 const fs = require("fs");
-let input = fs.readFileSync(0).toString().split("\n");
+let input = fs.readFileSync(0).toString().trim().split("\n");
 const len = Number(input[0])
 const char = input[input.length - 1].trim()
 
