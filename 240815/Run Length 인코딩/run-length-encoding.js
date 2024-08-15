@@ -3,20 +3,20 @@ let input = fs.readFileSync(0).toString();
 
 let answer = ''
 let i = 0
-while (i < input.length - 1) {
-    let count = 1
+while (i < input.length) {
     answer = answer + input[i]
+    let count = 1
     for (let j = i + 1; j < input.length; j++) {
         if (input[i] === input[j]) {
-            i++
             count++
-        } else {
             i = j
+        } else {
             break
         }
         
     }
-    answer = answer + count
+    answer += count;
+    i++
 }
 console.log(answer.length)
 console.log(answer)
