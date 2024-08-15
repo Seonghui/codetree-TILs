@@ -1,7 +1,7 @@
 const fs = require("fs");
 let input = fs.readFileSync(0).toString().split("\n");
 const len = Number(input[0])
-const char = input[input.length - 1]
+const char = input[input.length - 1].trim()
 
 let totalLength = 0;
 let count = 0
